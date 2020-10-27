@@ -34,6 +34,10 @@ public class Balloon {
 	}
 	
 	@Override
+	public String toString() {
+		return "Balloon [type=" + type + ", size=" + size + "]";
+	}
+	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;

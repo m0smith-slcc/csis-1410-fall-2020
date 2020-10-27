@@ -4,7 +4,7 @@ import javax.swing.JPanel;
 import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import javax.swing.Icon;
+
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.border.EmptyBorder;
@@ -50,8 +50,9 @@ public class BalloonPanel extends JPanel {
 	 * @param rightBalloon the rightBalloon to set
 	 */
 	public void setRightBalloon(Balloon rightBalloon) {
-		lblBalloon2.setIcon(getIcon(this.rightBalloon));
 		this.rightBalloon = rightBalloon;
+		lblBalloon2.setIcon(getIcon(this.rightBalloon));
+		
 		rightBalloonType.setText(this.rightBalloon.getType().name());
 	}
 

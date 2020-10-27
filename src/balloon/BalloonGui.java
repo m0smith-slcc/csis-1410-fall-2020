@@ -88,8 +88,16 @@ public class BalloonGui extends JFrame {
 				balloonPanel.setLeftBalloon(generateBallon());
 				balloonPanel.setRightBalloon(generateBallon());
 				
+				
+				
+				
+				
 				Balloon balloon1 = balloonPanel.getLeftBalloon();
 				Balloon balloon2 = balloonPanel.getRightBalloon();
+				
+				System.out.println(balloon1);
+				System.out.println(balloon2);
+				System.out.println();
 				
 				if(balloon1.equals(balloon2)) {
 					lblResult.setText("EQUALS");
